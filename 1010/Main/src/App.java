@@ -16,15 +16,15 @@ public class Main {
 
         Scanner ler = new Scanner(System.in);
 
-        cod1 = ler.nextInt();
-        nump1 = ler.nextInt();
-        val1 = ler.nextDouble();
+        for (int i = 0; i < 2; i++) {
 
-        cod2 = ler.nextInt();
-        nump2 = ler.nextInt();
-        val2 = ler.nextDouble();
+            ler.nextInt();
+            nump1 = ler.nextInt();
+            val1 = ler.nextDouble();
+            
+            total += nump1 * val1;
+        }
 
-        total = (val1 * nump1) + (val2 * nump2);
 
     System.out.printf("VALOR A PAGAR: R$ %.2f", total);
 
